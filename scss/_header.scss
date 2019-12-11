@@ -10,6 +10,9 @@ header, .header {
     .yt-sm-vid {
         width: 75%;
         height: 200px;
+        @media (min-width: 768px) {
+            display: none;
+        }
     }
     input, textarea {
         background: white;
