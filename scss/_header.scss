@@ -1,0 +1,10 @@
+header, .header {
+    background: #A3D6D3;
+    height: 100vh;
+    .disc {
+        width: 100%;
+        @media (min-width: 768px) {
+            transform: translate(13%, 13%);
+        }
+    }
+}
