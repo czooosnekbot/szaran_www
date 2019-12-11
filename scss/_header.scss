@@ -1,10 +1,23 @@
 header, .header {
     background: #A3D6D3;
     height: 100vh;
-    .disc {
+    .yt-vid {
         width: 100%;
-        @media (min-width: 768px) {
-            transform: translate(13%, 13%);
+        height: 200px;
+        &:nth-of-type(2) {
+            display: none;
         }
     }
+    
 }
+
+.h-bg-vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .32;
+    z-index: 0;
+}
+
