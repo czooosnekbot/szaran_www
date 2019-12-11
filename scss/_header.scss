@@ -1,14 +1,15 @@
 header, .header {
-    background: #A3D6D3;
     height: 100vh;
     .yt-vid {
         width: 100%;
         height: 200px;
         @media (max-width: 768px) {
-            &:nth-of-type(2) {
-                display: none;
-            }
+            display: none;
         }
+    }
+    .yt-sm-vid {
+        width: 75%;
+        height: 200px;
     }
     input, textarea {
         background: white;
@@ -20,7 +21,10 @@ header, .header {
             background: rgba(162, 232, 182, .29);
             transition: .5s;
         }
-        width: 400px;
+        width: 320px;
+        @media (min-width: 768px) {
+            width: 400px;
+        }
         resize: none;
         font-family: 'Ubuntu Condensed';
         &[type=submit] {
